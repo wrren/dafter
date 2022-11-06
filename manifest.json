@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Dafter",
+    "version": "1.0",
+    "description": "Extends daft.ie with useful functions like the ability to hide ads and track price changes",
+    "icons": {
+      "48": "icons/dafter-48.png"
+    },
+    "permissions": [
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://*.daft.ie/*"],
+        "js": ["dafter.js"]
+      }
+    ]
+}
+  
